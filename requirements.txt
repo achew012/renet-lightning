@@ -1,0 +1,15 @@
+boto3
+torch -f https://download.pytorch.org/whl/cu113
+torchvision -f https://download.pytorch.org/whl/cu113
+torchaudio -f https://download.pytorch.org/whl/cu113
+pytorch_lightning
+datasets
+ipdb
+hydra-core
+jsonlines
+scipy
+clearml
+tqdm
+#https://data.dgl.ai/wheels/repo.html/dgl_cu110-0.8.1-cp38-cp38-manylinux1_x86_64.whl
+dgl-cu110==0.8.1 -f https://data.dgl.ai/wheels/repo.html
+dglgo

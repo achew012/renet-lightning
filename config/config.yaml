@@ -1,0 +1,24 @@
+data_path: '/mnt/kgir/dense50EG_no_overlap'
+dataset: gdelt
+batch_size: 256 # the batch size for training
+dropout: 0.5 # dropout probability
+lr: 1.0e-3 # learning rate
+wd: 1.0e-5 # weight decay 
+grad_norm: 1.0 # norm to clip gradient to
+num_epochs: 5 # maximum epochs
+seq_len: 13 # history sequence length
+rnn_layers: 1 # number of layers
+test_interval: 0.25 # test every n epoch
+n_hidden: 128 # embedding dim
+RGCN_bases: 64 # RGCN relation bases
+c_temp: 0.25 # contrastive temperature
+c_lambda: 0.8 # contrastive weight
+use_contrastive: False # whether use contrastive learning
+remote: True
+queue: compute
+train: True
+test: False
+gpu: 1
+grad_accum: 4
+checkpointing: True
+early_stopping: True
